@@ -7,5 +7,9 @@ module.exports = {
 
     return config;
   },
-  assetPrefix: process.env.NODE_ENV === "production" ? "/prunr" : ""
+  assetPrefix: process.env.NODE_ENV === "production" ? "/prunr" : "",
+  publicRuntimeConfig: {
+    // Will be available on both server and client
+    staticFolder: "/prunr/static"
+  }
 };
