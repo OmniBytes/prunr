@@ -36,7 +36,7 @@ const Footer = () => (
               <div className="footer__row">
                 Created with ☕ in{" "}
                 <a
-                  href="https://undraw.co"
+                  href="https://www.cityofsacramento.org/"
                   target="_blank"
                   className="footer__link"
                 >

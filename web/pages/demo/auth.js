@@ -8,6 +8,7 @@ const Auth = () => (
   <div>
     <Head />
     <Nav />
+    <div />
 
     <div className="auth">
       <div className="container">
