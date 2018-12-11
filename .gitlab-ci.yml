@@ -1,0 +1,18 @@
+image: node:latest
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  script:
+    - npm run dev
+    - npm run web:build
+    - npm run web:export
+    - ls web/out
+    - mv web/out public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
