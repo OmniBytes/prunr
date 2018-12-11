@@ -14,16 +14,18 @@ const Nav = () => (
       <nav className="nav__mobile" />
       <div className="container">
         <div className="navbar__inner">
-          <a href="index.html" className="navbar__logo">
-            Prunr
-          </a>
+          <Link href="/">
+            <a className="navbar__logo">Prunr</a>
+          </Link>
           <nav className="navbar__menu">
             <ul>
               <li>
                 <a href="#">Coming Soon!</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link href="/blog">
+                  <a>Blog</a>
+                </Link>
               </li>
             </ul>
           </nav>

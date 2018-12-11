@@ -6,9 +6,9 @@ const Footer = () => (
     <div className="footer footer--dark">
       <div className="container">
         <div className="footer__inner">
-          <a href="index.html" className="footer__textLogo">
-            Prunr
-          </a>
+          <Link href="/">
+            <a className="footer__textLogo">Prunr</a>
+          </Link>
           <div className="footer__data">
             <div className="footer__data__item">
               <div className="footer__row">
@@ -43,6 +43,21 @@ const Footer = () => (
                   Sacramento
                 </a>
               </div>
+              <div className="footer__row">
+                <Link href="/demo/auth">
+                  <a className="footer__link">Demo/Auth</a>
+                </Link>
+              </div>
+              <div className="footer__row">
+                <Link href="/demo/dashboard">
+                  <a className="footer__link">Demo/Dashboard</a>
+                </Link>
+              </div>
+              <div className="footer__row">
+                <Link href="/demo/page">
+                  <a className="footer__link">Demo/Page</a>
+                </Link>
+              </div>
             </div>
             <div className="footer__data__item">
               <div className="footer__row">
@@ -70,11 +85,6 @@ const Footer = () => (
                   className="footer__link"
                 >
                   Facebook
-                </a>
-              </div>
-              <div className="footer__row">
-                <a href="./additional.html" className="footer__link">
-                  MIT license
                 </a>
               </div>
             </div>
