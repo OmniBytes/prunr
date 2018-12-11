@@ -8,7 +8,8 @@
     "web": "cd web && npm run dev",
     "web:build": "cd web && npm run build",
     "web:export": "cd web && npm run export",
-    "app": "cd app && npm run start"
+    "app": "cd app && npm run start",
+    "dev": "cd web && npmyar"
   },
   "author": "",
   "license": "ISC"
