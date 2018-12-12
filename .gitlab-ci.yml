@@ -9,10 +9,6 @@ pages:
     - npm run dev
     - npm run web:deploy
     - touch web/out/.nojekyll
-    - mkdir web/out/.well-known
-    - mkdir web/out/.well-known/acme-challenge
-    - touch web/out/.well-known/acme-challenge/6tkGvXq6gq_FhXtqDmX54bd6np9YIRNPJUQ3mqX-JFE
-    - echo "cKlZBSy1pfhpkLwt9OmKKosBljCxcXMci4fwbXHiDOo.JEALJefL6MoF5ej-xvHYsftlxaT5ZWqj_BoLUBCmXOg" >> web/out/.well-known/acme-challenge/6tkGvXq6gq_FhXtqDmX54bd6np9YIRNPJUQ3mqX-JFE
     - ls web/out
     - mv web/out public
   artifacts:
