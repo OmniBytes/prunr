@@ -14,7 +14,11 @@ const Auth = () => (
       <div className="container">
         <div className="auth__inner">
           <div className="auth__media">
-            <img src="/static/images/undraw_selfie.svg" />
+            <img
+              src={`${
+                process.env.ASSET_PREFIX
+              }/static/images/undraw_selfie.svg`}
+            />
           </div>
           <div className="auth__auth">
             <h1 className="auth__title">Access your account</h1>

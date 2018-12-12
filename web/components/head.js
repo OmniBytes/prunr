@@ -15,11 +15,26 @@ const Head = props => (
       content={props.description || defaultDescription}
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
-    <link rel="apple-touch-icon" href="/static/touch-icon.png" />
-    <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-    <link rel="icon" href="/static/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href={`${process.env.ASSET_PREFIX}/static/touch-icon.png`}
+    />
+    <link
+      rel="apple-touch-icon"
+      href={`${process.env.ASSET_PREFIX}/static/touch-icon.png`}
+    />
+    <link
+      rel="mask-icon"
+      href={`${process.env.ASSET_PREFIX}/static/favicon-mask.svg`}
+      color="#49B882"
+    />
+    <link rel="icon" href={`${process.env.ASSET_PREFIX}/static/favicon.ico`} />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href={`${process.env.ASSET_PREFIX}/static/style.css`}
+    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
@@ -38,7 +53,7 @@ const Head = props => (
     <meta property="og:image" content={props.ogImage || defaultOGImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <script src="/static/app.js" />
+    <script src={`${process.env.ASSET_PREFIX}/static/app.js`} />
   </NextHead>
 );
 

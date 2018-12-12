@@ -8,6 +8,7 @@ pages:
   script:
     - npm run dev
     - npm run web:deploy
+    - touch web/out/.nojekyll
     - ls web/out
     - mv web/out public
   artifacts:

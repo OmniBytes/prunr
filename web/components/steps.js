@@ -17,7 +17,9 @@ const Steps = () => (
           <div className="step">
             <div className="step__media">
               <img
-                src="/static/images/undraw_designer.svg"
+                src={`${
+                  process.env.ASSET_PREFIX
+                }/static/images/undraw_designer.svg`}
                 className="step__image"
               />
             </div>
@@ -30,7 +32,9 @@ const Steps = () => (
           <div className="step">
             <div className="step__media">
               <img
-                src="/static/images/undraw_responsive.svg"
+                src={`${
+                  process.env.ASSET_PREFIX
+                }/static/images/undraw_responsive.svg`}
                 className="step__image"
               />
             </div>
@@ -43,7 +47,9 @@ const Steps = () => (
           <div className="step">
             <div className="step__media">
               <img
-                src="/static/images/undraw_creation.svg"
+                src={`${
+                  process.env.ASSET_PREFIX
+                }/static/images/undraw_creation.svg`}
                 className="step__image"
               />
             </div>

@@ -13,7 +13,9 @@ const Sections = () => (
         <div className="expanded__inner">
           <div className="expanded__media">
             <img
-              src="/static/images/undraw_browser.svg"
+              src={`${
+                process.env.ASSET_PREFIX
+              }/static/images/undraw_browser.svg`}
               className="expanded__image"
             />
           </div>
@@ -37,7 +39,9 @@ const Sections = () => (
         <div className="expanded__inner">
           <div className="expanded__media">
             <img
-              src="/static/images/undraw_frameworks.svg"
+              src={`${
+                process.env.ASSET_PREFIX
+              }/static/images/undraw_frameworks.svg`}
               className="expanded__image"
             />
           </div>
@@ -60,7 +64,7 @@ const Sections = () => (
         <div className="expanded__inner">
           <div className="expanded__media">
             <img
-              src="/static/images/together.svg"
+              src={`${process.env.ASSET_PREFIX}/static/images/together.svg`}
               className="expanded__image"
             />
           </div>
