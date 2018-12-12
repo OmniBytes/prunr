@@ -31,8 +31,6 @@ const Footer = () => (
                   @funkstyr
                 </a>
               </div>
-            </div>
-            <div className="footer__data__item">
               <div className="footer__row">
                 Created with <i className="fas fa-coffee" /> in{" "}
                 <a
@@ -43,6 +41,8 @@ const Footer = () => (
                   Sacramento
                 </a>
               </div>
+            </div>
+            <div className="footer__data__item">
               <div className="footer__row">
                 <Link
                   href="/demo/auth"
@@ -66,35 +66,6 @@ const Footer = () => (
                 >
                   <a className="footer__link">Demo/Page</a>
                 </Link>
-              </div>
-            </div>
-            <div className="footer__data__item">
-              <div className="footer__row">
-                <a
-                  href="https://github.com/anges244/evie"
-                  target="_blank"
-                  className="footer__link"
-                >
-                  GitHub
-                </a>
-              </div>
-              <div className="footer__row">
-                <a
-                  href="https://twitter.com/undraw_co"
-                  target="_blank"
-                  className="footer__link"
-                >
-                  Twitter
-                </a>
-              </div>
-              <div className="footer__row">
-                <a
-                  href="https://www.facebook.com/undraw.co/"
-                  target="_blank"
-                  className="footer__link"
-                >
-                  Facebook
-                </a>
               </div>
             </div>
           </div>
