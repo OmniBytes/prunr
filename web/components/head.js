@@ -2,13 +2,15 @@ import React from "react";
 import NextHead from "next/head";
 import { string } from "prop-types";
 
-const defaultDescription = "";
-const defaultOGURL = "";
+const defaultDescription = "Prunr, software to execute your scripts.";
+const defaultOGURL = "https://prunr.io";
+const defaultTwitter = "@Omnibytes";
 const defaultOGImage = "";
 
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>{props.title || ""}</title>
     <meta
       name="description"
@@ -47,6 +49,11 @@ const Head = props => (
       property="og:description"
       content={props.description || defaultDescription}
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={props.url || defaultOGURL} />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:site" content={defaultTwitter} />
+    <link href="https://twitter.com/omnibytes" rel="publisher" />
     <meta name="twitter:site" content={props.url || defaultOGURL} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={props.ogImage || defaultOGImage} />
