@@ -7,8 +7,7 @@ pages:
   stage: deploy
   script:
     - npm run dev
-    - npm run web:build
-    - npm run web:export
+    - npm run web:deploy
     - ls web/out
     - mv web/out public
   artifacts:

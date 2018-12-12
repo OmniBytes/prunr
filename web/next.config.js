@@ -6,7 +6,11 @@ const assetPrefix = isProd ? "/prunr" : "";
 module.exports = {
   assetPrefix: assetPrefix,
   exportPathMap: () => ({
-    "/": { page: "/" }
+    "/": { page: "/" },
+    "/demo/auth": { page: "/demo/auth" },
+    "/demo/dashboard": { page: "/demo/dashboard" },
+    "/demo/page": { page: "/demo/page" },
+    "/blog": { page: "/blog" }
   }),
   webpack: config => {
     // Fixes npm packages that depend on `fs` module
@@ -19,6 +23,13 @@ module.exports = {
         "process.env.ASSET_PREFIX": JSON.stringify(assetPrefix)
       })
     );
+
+    config.module.rules = config.module.rules.map(rule => {
+      if (rule.loader === "babel-loader") {
+        rule.options.cacheDirectory = false;
+      }
+      return rule;
+    });
 
     return config;
   }
