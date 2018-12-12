@@ -6,7 +6,7 @@ const Footer = () => (
     <div className="footer footer--dark">
       <div className="container">
         <div className="footer__inner">
-          <Link href="/">
+          <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
             <a className="footer__textLogo">Prunr</a>
           </Link>
           <div className="footer__data">
@@ -34,7 +34,7 @@ const Footer = () => (
             </div>
             <div className="footer__data__item">
               <div className="footer__row">
-                Created with ☕ in{" "}
+                Created with <i className="fas fa-coffee" /> in{" "}
                 <a
                   href="https://www.cityofsacramento.org/"
                   target="_blank"
@@ -44,17 +44,26 @@ const Footer = () => (
                 </a>
               </div>
               <div className="footer__row">
-                <Link href="/demo/auth">
+                <Link
+                  href="/demo/auth"
+                  as={`${process.env.ASSET_PREFIX}/demo/auth`}
+                >
                   <a className="footer__link">Demo/Auth</a>
                 </Link>
               </div>
               <div className="footer__row">
-                <Link href="/demo/dashboard">
+                <Link
+                  href="/demo/dashboard"
+                  as={`${process.env.ASSET_PREFIX}/demo/dashboard`}
+                >
                   <a className="footer__link">Demo/Dashboard</a>
                 </Link>
               </div>
               <div className="footer__row">
-                <Link href="/demo/page">
+                <Link
+                  href="/demo/page"
+                  as={`${process.env.ASSET_PREFIX}/demo/page`}
+                >
                   <a className="footer__link">Demo/Page</a>
                 </Link>
               </div>

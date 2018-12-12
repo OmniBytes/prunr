@@ -14,7 +14,7 @@ const Nav = () => (
       <nav className="nav__mobile" />
       <div className="container">
         <div className="navbar__inner">
-          <Link href="/">
+          <Link href="/" as={`${process.env.ASSET_PREFIX}/`}>
             <a className="navbar__logo">Prunr</a>
           </Link>
           <nav className="navbar__menu">
@@ -23,7 +23,7 @@ const Nav = () => (
                 <a href="#">Coming Soon!</a>
               </li>
               <li>
-                <Link href="/blog">
+                <Link href="/blog" as={`${process.env.ASSET_PREFIX}/blog`}>
                   <a>Blog</a>
                 </Link>
               </li>
