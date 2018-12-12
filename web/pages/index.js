@@ -6,9 +6,10 @@ import Jumbotron from "../components/jumbotron";
 import Sections from "../components/sections";
 import CallToAction from "../components/calltoaction";
 import Footer from "../components/footer";
+import Analytics from "../components/analytics";
 
 const Home = () => (
-  <div>
+  <Analytics>
     <Head title="Prunr" />
 
     <Nav />
@@ -65,7 +66,7 @@ const Home = () => (
         color: #333;
       }
     `}</style>
-  </div>
+  </Analytics>
 );
 
 export default Home;
