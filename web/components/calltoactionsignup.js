@@ -57,19 +57,25 @@ class CallToActionSignup extends React.Component {
               <h2 className="cta__title">Show Interest</h2>
               <p className="cta__sub cta__sub--center">Join our newsletter.</p>
 
-              <div className="double">
-                <div className="half">
-                  <input
-                    type="text"
-                    placeholder="email"
-                    onChange={this.onChangeEmail}
-                    value={this.state.email}
-                  />
-                </div>
+              <div style={{ display: "inline-block" }}>
+                <input
+                  type="text"
+                  placeholder="email"
+                  onChange={this.onChangeEmail}
+                  value={this.state.email}
+                  style={{
+                    width: "40vw",
+                    minWidth: 300,
+                    maxWidth: 800,
+                    display: "inline",
+                    paddingRight: 90
+                  }}
+                />
 
                 <button
                   className="button button__accent"
                   onClick={this.onSubmitEmail}
+                  style={{ display: "inline", marginLeft: -85 }}
                 >
                   Join
                 </button>
