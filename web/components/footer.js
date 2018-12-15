@@ -22,13 +22,13 @@ const Footer = () => (
                 </a>
               </div>
               <div className="footer__row">
-                Code/design by{" "}
+                Theme by{" "}
                 <a
-                  href="https://twitter.com/funkstyr"
+                  href="https://twitter.com/undraw_co"
                   target="_blank"
                   className="footer__link"
                 >
-                  @funkstyr
+                  @undraw_co
                 </a>
               </div>
               <div className="footer__row">

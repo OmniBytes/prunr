@@ -1,5 +1,5 @@
 import React from "react";
-import { initGA, logPageView } from "./utils";
+import { initGA, logPageView } from "../utils/analytics";
 
 export default class Analytics extends React.Component {
   componentDidMount() {

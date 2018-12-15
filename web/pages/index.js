@@ -4,7 +4,7 @@ import Head from "../components/head";
 import Nav from "../components/nav";
 import Jumbotron from "../components/jumbotron";
 import Sections from "../components/sections";
-import CallToAction from "../components/calltoaction";
+import CallToAction from "../components/calltoactionsignup";
 import Footer from "../components/footer";
 import Analytics from "../components/analytics";
 

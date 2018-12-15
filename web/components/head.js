@@ -10,7 +10,7 @@ const defaultOGImage = "";
 const Head = props => (
   <NextHead>
     <meta charSet="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
     <title>{props.title || ""}</title>
     <meta
       name="description"
