@@ -15,7 +15,7 @@ const Jumbotron = () => (
                 It is extemely lightweight, customizable and works perfectly on
                 every OS.
               </p>
-              <a href="#" className="button button__accent">
+              <a href="#calltoaction" className="button button__accent">
                 Download Prunr
               </a>
               <a href="#" className="button hero__button">
