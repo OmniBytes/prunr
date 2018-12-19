@@ -50,7 +50,7 @@ class CallToActionSignup extends React.Component {
 
   render() {
     return (
-      <div id="calltoaction">
+      <div id="calltoaction" style={{ marginBottom: -1 }}>
         <div className="cta cta--reverse">
           <div className="container">
             <div className="cta__inner">
